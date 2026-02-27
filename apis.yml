@@ -1,0 +1,47 @@
+name: Databolt
+description: APIs and developer resources for Databolt
+image: https://databolt.com/logo.png
+url: https://databolt.com
+created: '2024'
+modified: '2024'
+apis:
+- name: Databolt API
+  description: Core API for accessing Databolt data services and analytics
+  image: https://databolt.com/api-logo.png
+  humanUrl: https://databolt.com
+  baseUrl: https://api.databolt.com
+  tags:
+  - data
+  - analytics
+  - api
+  properties:
+  - type: X-documentation
+    url: https://docs.databolt.com
+  - type: X-openapi
+    url: https://api.databolt.com/openapi.json
+  - type: X-authentication
+    url: https://docs.databolt.com/authentication
+  - type: X-pricing
+    url: https://databolt.com/pricing
+  - type: X-terms-of-service
+    url: https://databolt.com/terms
+  - type: X-support
+    url: https://databolt.com/support
+  - type: X-status
+    url: https://status.databolt.com
+  - type: X-signup
+    url: https://databolt.com/signup
+  contact:
+  - FN: Databolt Support
+    email: support@databolt.com
+    X-twitter: databolt
+common:
+- type: Portal
+  url: https://developer.databolt.com
+- type: Blog
+  url: https://databolt.com/blog
+- type: Privacy Policy
+  url: https://databolt.com/privacy
+maintainers:
+- FN: Databolt Team
+  email: api@databolt.com
