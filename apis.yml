@@ -13,9 +13,8 @@ apis:
     humanUrl: https://databolt.com
     baseUrl: https://api.databolt.com
     tags:
-      - data
-      - analytics
-      - api
+      - Analytics
+      - Data
     properties:
       - type: X-documentation
         url: https://docs.databolt.com
