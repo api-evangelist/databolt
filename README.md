@@ -1,44 +1,38 @@
 # Databolt (databolt)
-APIs and developer resources for Databolt
+Databolt is a digital design agency that builds software applications, websites, and custom web platforms for startups and businesses. The agency offers UI/UX design, web development, WordPress and Prestashop premium themes, SEO services, and operates GPU- and CPU-optimized clusters for rendering and computational data processing.
 
-**URL:** [Visit APIs.json URL](https://databolt.com)
+**URL:** [Visit APIs.yml URL](https://raw.githubusercontent.com/api-evangelist/databolt/refs/heads/main/apis.yml)
+
+## Scope
+
+- **Type:** Index
+- **Position:** Producer
+- **Access:** 1st-Party
+- **xType:** company
+
+## Tags
+
+- Agency, Custom Applications, Data Processing, Digital Design, SEO, UI/UX, Web Development, WordPress
 
 ## Timestamps
 
-- **Created:** 2024 
-- **Modified:** 2024 
+- **Created:** 2024-01-01
+- **Modified:** 2026-04-28
 
 ## APIs
 
-### Databolt API
-Core API for accessing Databolt data services and analytics
-
-**Human URL:** [https://databolt.com](https://databolt.com)
-
-
-#### Tags:
-
- - data, analytics, api
-
-#### Properties
-
-- [X-documentation](https://docs.databolt.com)
-- [X-openapi](https://api.databolt.com/openapi.json)
-- [X-authentication](https://docs.databolt.com/authentication)
-- [X-pricing](https://databolt.com/pricing)
-- [X-terms-of-service](https://databolt.com/terms)
-- [X-support](https://databolt.com/support)
-- [X-status](https://status.databolt.com)
-- [X-signup](https://databolt.com/signup)
+Databolt is a design and development services agency and does not currently
+publish a public API. This index tracks the company as an organization for
+later capability and partnership profiling.
 
 ## Common Properties
 
-- [Portal](https://developer.databolt.com)
-- [Blog](https://databolt.com/blog)
-- [Privacy Policy](https://databolt.com/privacy)
+- [Website](https://www.databolt.io)
+- [Services](https://www.databolt.io/services)
+- [Portfolio](https://www.databolt.io/portfolio)
+- [Contact](https://www.databolt.io/contact)
 
 ## Maintainers
 
-**FN:** Databolt Team
-
-**Email:** api@databolt.com
+- **FN:** Kin Lane
+- **Email:** kin@apievangelist.com
