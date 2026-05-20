@@ -27,6 +27,8 @@ position: Producer
 access: 1st-Party
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/d6t
   - type: Website
     url: https://www.databolt.io
   - type: Services
