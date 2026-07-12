@@ -27,6 +27,8 @@ position: Producer
 access: 1st-Party
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/databolt-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/d6t
   - type: Website
