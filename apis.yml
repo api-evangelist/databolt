@@ -31,7 +31,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/databolt/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2026-04-28'
+modified: '2026-08-13'
 specificationVersion: '0.19'
 kind: company
 position: Producer
@@ -40,16 +40,62 @@ apis: []
 common:
   - type: DomainSecurity
     url: security/databolt-domain-security.yml
-  - type: GitHubOrganization
-    url: https://github.com/d6t
+  - type: LLMsTxt
+    url: llms/databolt-llms.txt
   - type: Website
-    url: https://www.databolt.io
+    url: https://databolt.io
   - type: Services
-    url: https://www.databolt.io/services
-  - type: Portfolio
-    url: https://www.databolt.io/portfolio
+    url: https://databolt.io/#services
+  - type: Products
+    url: https://databolt.io/#products
   - type: Contact
-    url: https://www.databolt.io/contact
+    url: https://databolt.io/#get-in-touch
+  - type: PrivacyPolicy
+    url: https://databolt.io/privacy-policy.html
+  - type: CookiePolicy
+    url: https://databolt.io/cookies.html
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Databolt is a services agency whose entire web presence is one static Apache-served
+    page at databolt.io with anchor-only navigation — /openapi.json, /api-docs, /llms.txt,
+    /robots.txt, /sitemap.xml and every /.well-known/ path return 404, and api., developer.
+    and docs.databolt.io do not resolve in DNS, so there is no API, portal, or SDK to profile.
+  evidence:
+    - url: https://databolt.io/
+      status: 200
+    - url: https://databolt.io/openapi.json
+      status: 404
+    - url: https://databolt.io/.well-known/agent-card.json
+      status: 404
+    - url: https://api.databolt.io/
+      status: 0
+  checked: '2026-08-13'
+x-corrections:
+  - date: '2026-08-13'
+    field: common[].GitHubOrganization
+    action: removed
+    was: https://github.com/d6t
+    reason: >-
+      Ownership check (pipeline STEP 0c). The GitHub org `d6t` is named "Databolt" but its
+      GitHub profile declares blog https://www.databolt.tech/ and email support@databolt.tech,
+      and it publishes the d6tflow/d6tpipe/d6tstack/d6tjoin Python data-science libraries.
+      That is a different, unaffiliated company that merely shares the name; databolt.io is a
+      digital design agency (contact flavius@databolt.io) with no GitHub presence of its own.
+  - date: '2026-08-13'
+    field: common[].Services, common[].Portfolio, common[].Contact
+    action: corrected
+    was: https://www.databolt.io/services, /portfolio, /contact
+    reason: >-
+      All three returned HTTP 404. databolt.io is a single-page site; the real destinations are
+      the in-page anchors #services, #products and #get-in-touch. Portfolio was replaced with
+      Products because the site has a Products section and no portfolio section.
